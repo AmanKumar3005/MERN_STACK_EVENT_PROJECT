@@ -13,7 +13,7 @@ console.log('MONGO_URI:', process.env.MONGO_URI);
 
 app.use(
     cors({
-      origin: [process.env.FRONTEND_URL],
+      origin: [process.env.FRONTEND_URL, "https://mern-stack-event-project-upsf.vercel.app"],
       methods: ["POST"],
       credentials: true,
     })
